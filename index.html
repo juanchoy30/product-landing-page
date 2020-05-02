@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Juan Miguel Choy">
-        <title>Survey Form</title>
+        <title>Product Landing Site</title>
   
         <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -13,7 +13,29 @@
         <!-- endbuild -->
     </head>
     <body>
+        <header id=header>
 
+            <img id="header-img">
+
+            <nav id="nav-bar">
+            <!--The navbar should always be at the top of the viewport.-->
+                <ul>
+                    <li class="nav-link"></li>
+                    <li class="nav-link"></li>
+                    <li class="nav-link"></li>
+                </ul>
+            </nav>
+
+            <!--Embeded video id="video"-->
+
+            <form id="form">
+                <input id="email" placeholder="email" email> <!--HTML5 validation to confirm that the entered text is an email address-->
+                <buttom type="submit" id="submit"></buttom>
+                <!--When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).-->
+            </form>
+
+        </header>
+        
 
         <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

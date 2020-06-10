@@ -10,31 +10,97 @@
         <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <!-- endbuild -->
     </head>
     <body>
         <header id=header>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <img src="img/logo-2.png" id="header-img" alt="Logo" class="mr-1">
+                    </div>
+                    <div>
+                        <h1>Toyland</h1>
+                        <p>Welcome <br> to the world of imagination</p>
+                    </div>
+                    <div class="ml-auto">
+                        <nav class="navbar navbar-expand-lg navbar-dark" id="nav-bar">
+                            <!--The navbar should always be at the top of the viewport.-->
+                            <ul class="navbar-nav">
+                                <div class="row">
+                                    <li class="nav-item"><a class="nav-link" href="#watchVideo">
+                                        <img class="pokeball" src="img/pokeball.png" alt="Pokeball Icon">
+                                        Games</a></li>
+                                    <li ><a class="nav-link" href="#features">
+                                        <img class="pokeball" src="img/pokeball.png" alt="Pokeball Icon">
+                                        Features</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">
+                                        <img class="pokeball" src="img/pokeball.png" alt="Pokeball Icon">
+                                        Buy</a></li>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-            <img id="header-img">
-
-            <nav id="nav-bar">
-            <!--The navbar should always be at the top of the viewport.-->
-                <ul>
-                    <li class="nav-link"></li>
-                    <li class="nav-link"></li>
-                    <li class="nav-link"></li>
-                </ul>
-            </nav>
-
+        <article class="container">
+        
             <!--Embeded video id="video"-->
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-7">
+                    <section id="watchVideo" class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/wqpEJo3whYc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </div>
+            </div>
 
-            <form id="form">
-                <input id="email" placeholder="email" email> <!--HTML5 validation to confirm that the entered text is an email address-->
-                <buttom type="submit" id="submit"></buttom>
+            <!-- Form / Email submition -->
+            <form id="form" class="content" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Woud you like to recieve our news and offers!!</label>
+                <div>
+                    <input id="email" placeholder="email" email required> <!--HTML5 validation to confirm that the entered text is an email address-->
+                    <buttom class="btn btn-info btn-sm ml-2" type="submit" id="submit">
+                        <img class="pokeball" src="img/pokeball.png" alt="Pokeball Icon"> 
+                        Submit</buttom>
+                </div>
                 <!--When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).-->
             </form>
 
-        </header>
+            <!--Features-->
+            <section id="features">
+                <div class="media">
+                    <img src="img/bomb.png" alt="Bomb">
+                    <div class="media-body ml-3 align-self-center">
+                        <h5>Fun garanteed</h5>
+                        <p>We developed the most memorable and fun 8bit games! For those who still miss the style and field of the old school games!</p>
+                    </div>
+                </div>
+    
+                
+                <div class="media">
+                    <img src="img/baul.png" alt="treassure">
+                    <div class="media-body ml-3 align-self-center">
+                        <h5>Big surprises every week</h5>
+                        <p>If you sign in you´ll recieve prizes and new games for playing every seven days!!</p>
+                    </div>
+                </div>
+    
+                <div class="media">
+                    <img src="img/sword.png" alt="Sword">
+                    <div class="media-body ml-3 align-self-center">
+                        <h5>Multi player</h5>
+                        <p>A huge community is playing!! Challenge them and defeat them! All our games are thought to be enjoyed through multiplayer</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+        </article>
+        
         
 
         <!-- build:js js/main.js -->

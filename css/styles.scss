@@ -3,7 +3,7 @@
 //My product landing page should utilize CSS flexbox at least once.
 
 //colors
-$primaryColor: #61dfff;
+$primaryColor: #8c8484;
 $secondaryColor: #c061ff;
 
 //mixins
@@ -13,7 +13,7 @@ $secondaryColor: #c061ff;
 }   
 
 body {
-    background-color: #8c8484;
+    background-color: $primaryColor;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -44,6 +44,9 @@ article {
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
+    h3 {
+        font-size: 1.8em;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -52,9 +55,15 @@ article {
         #header-img {
             width: 70px;
         }
+        h1 {
+            font-size: 2em;
+        }
     }
     article {
         margin-top: 300px;
+        h3 {
+            font-size: 1.3em;
+        }
     }
   }
 
@@ -75,4 +84,34 @@ iframe, form {
 
 .pokeball {
     width: 35px;
+}
+
+.box {
+    max-width: 300px;
+    margin: 25px 10px;
+    padding: 0px;
+    border: 1px solid black;
+    .time-title {
+        @include margin-zero(5px, 0px);
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        color: white;
+    }
+    .product {
+        @include margin-zero(10px, 20px);
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        h5 {         
+            display: flex;
+            justify-content: center;
+            font-size: 1.8em;
+        }
+    }
+    .boton {
+        @include margin-zero(20px, 0px);
+    }
 }

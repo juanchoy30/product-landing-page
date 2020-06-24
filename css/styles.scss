@@ -21,7 +21,6 @@ header {
     @include margin-zero(20px, 0px);
     background-color: black;
     color: white;
-    position: fixed;
     width: 100%;
     top: 0;
     font-size: 1em;
@@ -39,7 +38,7 @@ header {
 }
 
 article {
-    margin: 200px 0px 50px 0px;
+    margin: 25px 0px 50px 0px;
     font-size: .8em;
     background-color: white;
     border: 3px solid black;
@@ -60,7 +59,7 @@ article {
         }
     }
     article {
-        margin-top: 300px;
+        margin-top: 25px;
         h3 {
             font-size: 1.3em;
         }
